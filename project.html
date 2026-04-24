@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Portofolio | My Project</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('bg.png') center/cover no-repeat fixed;
+            margin: 0;
+            color: #eaeaea;
+        }
+
+        header {
+            background: url('banner.jpg') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            position: relative;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.6);
+        }
+
+        header h1,
+        header p {
+            position: relative;
+            z-index: 2;
+        }
+
+        nav {
+            background-color: #1a1a1a;
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #333;
+        }
+
+        nav a {
+            color: #ddd;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 6px 12px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* CONTAINER UTAMA */
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            background: rgba(245,245,245,0.95);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .container h2 {
+            color: #444444;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .container p {
+            text-align: center;
+            color: #666666;
+        }
+
+        /* GRID PROJECT */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        /* CARD PROJECT */
+        .project-card {
+            background: #ffffff;
+            border-radius: 15px;
+            overflow: hidden;
+            text-align: center;
+            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            transition: 0.3s;
+        }
+
+        .project-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .project-card a {
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #444;
+            background-color: #fff;
+            transition: 0.3s;
+        }
+
+        .project-card a:hover {
+            background-color: #1a1a1a;
+            color: #fff;
+            letter-spacing: 1px;
+        }
+
+        footer {
+            background: #111;
+            color: #ccc;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            border-top: 1px solid #333;
+        }
+
+        /* animasi */
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(10px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Fabio Narendra Anugrah</h1>
+    <p>Karya Nyata dari Proses Belajar</p>
+</header>
+
+<nav>
+    <a href="index.html">Beranda</a>
+    <a href="profil.html">Profil</a>
+    <a href="video.html">Video</a>
+    <a href="project.html">My Project</a>
+</nav>
+
+<div class="container">
+
+    <h2>My Project</h2>
+    <p><i>Halaman ini menampilkan kumpulan proyek yang pernah saya buat.</i></p>
+
+    <div class="project-grid">
+
+        <div class="project-card">
+            <img src="project1.jpg">
+            <a href="https://link-proyek-1.com" target="_blank">Video Argumentasi</a>
+        </div>
+
+        <div class="project-card">
+            <img src="PORTOFOLIO.png">
+            <a href="profil.html" target="_blank">Website Portofolio</a>
+        </div>
+
+        <div class="project-card">
+            <img src="steammtk.png">
+            <a href="https://scratch.mit.edu/projects/1147859277/fullscreen/" target="_blank">STEAM MTK</a>
+        </div>
+
+        <div class="project-card">
+            <img src="scratch.png">
+            <a href="https://scratch.mit.edu/users/alkifabio/" target="_blank">Proyek Lainnya</a>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>Ujian Praktik Terintegrasi | SMPIT Al Haraki | Fabio Narendra Anugrah@2026</p>
+</footer>
+
+</body>
+</html>

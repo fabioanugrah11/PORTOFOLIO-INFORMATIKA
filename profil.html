@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Portofolio | Profil</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('bg.png') center/cover no-repeat fixed;
+            margin: 0;
+            color: #eaeaea;
+        }
+
+        header {
+            background: url('banner.jpg') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            position: relative;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.6);
+        }
+
+        header h1,
+        header h2,
+        header p {
+            position: relative;
+            z-index: 2;
+        }
+
+        nav {
+            background-color: #1a1a1a;
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #333;
+        }
+
+        nav a {
+            color: #ddd;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 6px 12px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* CONTAINER */
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            background: rgba(245,245,245,0.95);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        /* FOTO PROFIL */
+        .profile-photo {
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* FOTO TENGAH (DIAM) */
+        .profile-photo img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+        }
+
+        /* FRAME MUTER */
+        .profile-photo::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 240px;
+            height: 240px;
+            transform: translate(-50%, -50%);
+            background: url('framebulet.png') center/contain no-repeat;
+            z-index: 1;
+
+            animation: spinFrame 6s linear infinite;
+        }
+
+        @keyframes spinFrame {
+            from {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+            to {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+
+        /* TEKS */
+        .content-text h2 {
+            color: #444444;
+        }
+
+        .content-text p {
+            text-align: justify;
+            color: #666666;
+            line-height: 1.6;
+        }
+
+        footer {
+            background: #111;
+            color: #ccc;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            border-top: 1px solid #333;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>PORTOFOLIO</h1>
+    <h2>Fabio Narendra Anugrah</h2>
+    <p>Karya Nyata dari Proses Belajar</p>
+</header>
+
+<nav>
+    <a href="index.html">Beranda</a>
+    <a href="profil.html">Profil</a>
+    <a href="video.html">Video</a>
+    <a href="project.html">My Project</a>
+</nav>
+
+<div class="container">
+
+    <div class="profile-photo">
+        <img src="Fabiiji.jpg" alt="Foto Profil">
+        <p><i>-</i></p>
+    </div>
+
+    <div class="content-text">
+
+     <h2>Profil Singkat</h2>
+<p><i>Nama saya Fabio Narendra Anugrah, siswa kelas 9 Al Araf di SMPIT Al-Haraki.</i></p>
+
+<h2>Tentang Saya</h2>
+<p><i>Saya lahir di Depok pada 25 Mei 2011 dan merupakan anak kedua dari dua bersaudara. Saat ini saya sangat gemar berolahraga serta aktif melakukan berbagai kegiatan positif yang dapat menunjang masa depan saya nantinya. Fokus utama saya sekarang adalah mempersiapkan diri dengan sebaik mungkin agar bisa meraih hasil maksimal dalam setiap penilaian akademik.</i></p>
+
+<h2>Minat dan Bakat</h2>
+<p><i>Saya berminat dalam bidang olahraga dan hal yang berkaitan dengan kehidupan sehari-hari. Meskipun masih memiliki beberapa kekurangan, saya tetap bersemangat untuk belajar dan berkembang. Saya percaya dengan latihan dan konsistensi, kemampuan saya dapat meningkat serta membantu saya menjadi pribadi yang lebih disiplin dan bertanggung jawab.</i></p>
+
+<h2>Cita-cita dan Harapan</h2>
+<p><i>Cita-cita saya adalah menjadi seseorang yang bekerja di bidang ekonomi atau teknik udara. Saat ini, harapan saya adalah dapat masuk ke SMAN 1 Depok, kemudian melanjutkan pendidikan ke Fakultas Ekonomi dan Bisnis Universitas Indonesia atau Fakultas Teknik Universitas Indonesia agar dapat mengembangkan kemampuan dan meraih masa depan yang saya inginkan.</i></p>
+
+<h2>Kesan dan Pesan Selama Kelas IX</h2>
+<p><i>Saya mendapatkan banyak pengalaman berharga selama di SMPIT Al-Haraki, termasuk kegiatan di Cigombong, Solo, Jogja, Magelang, entre tour, English camp, kegiatan organisasi, dan lain-lain. Saya merasakan banyak perubahan dari SD ke SMP, karena saya berada di lingkungan yang lebih mendukung sehingga membantu saya menjadi pribadi yang lebih baik dan berkembang.</i></p>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>Ujian Praktik Terintegrasi | SMPIT Al Haraki | Fabio Narendra Anugrah@2026</p>
+</footer>
+
+</body>
+</html>

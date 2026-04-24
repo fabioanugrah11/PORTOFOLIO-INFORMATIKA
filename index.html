@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Portofolio Fabio</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('bg.png') center/cover no-repeat fixed;
+            margin: 0;
+            color: #eaeaea;
+        }
+
+        header {
+            background: url('banner.jpg') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            position: relative;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.6);
+        }
+
+        header h1,
+        header p {
+            position: relative;
+            z-index: 2;
+        }
+
+        nav {
+            background-color: #1a1a1a;
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #333;
+        }
+
+        nav a {
+            color: #ddd;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 6px 12px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* FRAME UTAMA */
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            background: rgba(245,245,245,0.95);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        /* GRID UTAMA */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+
+        /* TEKS KIRI */
+        .content-text h2 {
+            color: #444444;
+        }
+
+        .content-text p {
+            text-align: justify;
+            color: #666666;
+            line-height: 1.6;
+        }
+
+        /* GRID GAMBAR KANAN */
+        .content-gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 300px 300px;
+            gap: 0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .content-gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .content-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: #111;
+            color: #ccc;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            border-top: 1px solid #333;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Fabio Narendra Anugrah</h1>
+    <p>Karya Nyata dari Proses Belajar</p>
+</header>
+
+<nav>
+    <a href="index.html">Beranda</a>
+    <a href="profil.html">Profil</a>
+    <a href="video.html">Video</a>
+    <a href="project.html">My Project</a>
+</nav>
+
+<div class="container">
+
+    <div class="content-grid">
+
+        <!-- KIRI -->
+        <div class="content-text">
+
+            <h2>Pendahuluan</h2>
+            <p>
+                Website ini merupakan media pendukung untuk menampilkan hasil
+                Ujian Praktik Terintegrasi.
+            </p>
+
+            <h2>Tentang Website Ini</h2>
+            <p>
+                Website ini merupakan portofolio digital yang berisi hasil karya
+                dan pembelajaran selama Ujian Praktik Terintegrasi.
+            </p>
+
+            <h2>Tujuan Pembuatan Website</h2>
+            <p>
+                Tujuan pembuatan website ini adalah untuk melatih kemampuan HTML
+                dan menampilkan karya secara digital.
+            </p>
+
+            <h2>Topik Argumentasi</h2>
+            <p><i>Saya membahas Internship Curriculum bidang Broadcasting untuk digunakan sebagai teks argumentasi.</i></p>
+
+            <h2>Harapan dari Video</h2>
+            <p><i>Saya berharap agar argumen atau saran yang saya sampaikan dapat membantu program IC Broadcasting berkembang untuk kedepannya.</i></p>
+
+            <h2>Refleksi</h2>
+            <p><i>Alhamdulillah saya dapat menyelesaikan teks argumentasi walaupun dengan banyaknya jadwal yang bertabrakan juga dengan video yang belum selesai.</i></p>
+
+        </div>
+
+        <!-- KANAN -->
+<div class="content-gallery">
+    <img src="best3.jpg">
+    <img src="best2.jpg">
+    <img src="keluarga.png">
+    <img src="mpls.jpg">
+</div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>Ujian Praktik Terintegrasi | SMPIT Al Haraki | Fabio Narendra Anugrah@2026</p>
+</footer>
+
+</body>
+</html>
